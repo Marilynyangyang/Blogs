@@ -1,0 +1,17 @@
+{
+  "name": "blogs",
+  "version": "1.0.0",
+  "description": "WebApp for Blogs use nodejs and mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "mongodb",
+    "blogs"
+  ],
+  "author": "wyy",
+  "license": "GNU",
+  "git repository": "https://github.com/Marilynyangyang/Blogs"
+}

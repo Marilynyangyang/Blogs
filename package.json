@@ -2,7 +2,7 @@
   "name": "blogs",
   "version": "1.0.0",
   "description": "WebApp for Blogs use nodejs and mongodb",
-  "main": "app.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,12 +16,17 @@
   "git repository": "https://github.com/Marilynyangyang/Blogs",
   "dependencies": {
     "art-template": "^4.13.2",
+    "babel-polyfill": "^6.26.0",
+    "bcrypt": "^5.0.1",
     "config": "^3.3.6",
     "dateformat": "^4.6.3",
     "express": "^4.17.2",
     "express-art-template": "^1.0.1",
     "express-session": "^1.17.2",
+    "formidable": "^2.0.1",
+    "joi": "^17.5.0",
     "mongoose": "^5.13.14",
+    "mongoose-sex-page": "^1.2.4",
     "morgan": "^1.10.0"
   }
 }

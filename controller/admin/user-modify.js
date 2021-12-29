@@ -1,5 +1,3 @@
-"use strict";
-
 var bcrypt = require('bcrypt');
 
 var _require = require('../../model/user'),

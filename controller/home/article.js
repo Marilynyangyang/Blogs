@@ -12,8 +12,8 @@ module.exports = function _callee(req, res) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          // 接收客户端传递过来的文章id值
-          id = req.query.id; // 根据id查询文章详细信息
+          //接收客户端传递过来的文章id值
+          id = req.query.id; //根据id查询文章详细信息
 
           _context.next = 3;
           return regeneratorRuntime.awrap(Article.findOne({
@@ -29,7 +29,7 @@ module.exports = function _callee(req, res) {
 
         case 6:
           comments = _context.sent;
-          // res.send('欢迎来到博客文章详情页面')
+          //res.send('欢迎来到博客文章详情页面')
           res.render('home/article.art', {
             article: article,
             comments: comments

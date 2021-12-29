@@ -1,5 +1,3 @@
-"use strict";
-
 var _require = require('../../model/user'),
     User = _require.User;
 

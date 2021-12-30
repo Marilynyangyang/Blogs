@@ -28,7 +28,7 @@ module.exports = function _callee(req, res) {
         case 8:
           res.render('admin/user-edit', {
             message: message,
-            link: '/admin/user-edit',
+            link: '/admin/user-add',
             button: '添加'
           });
         case 9:

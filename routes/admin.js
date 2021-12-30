@@ -8,7 +8,7 @@ admin.get('/logout', require('../controller/admin/logout_func')); //实现退出
 
 admin.get('/user-edit', require('../controller/admin/admin_info')); //创建或编辑用户信息页面
 admin.get('/user', require('../controller/admin/admin_users_page')); //展示用户列表
-admin.post('/user-edit', require('../controller/admin/admin_add')); //实现用户添加功能
+admin.post('/user-add', require('../controller/admin/admin_add')); //实现用户添加功能
 admin.post('/user-modify', require('../controller/admin/admin_modify')); //实现用户修改功能
 admin.get('/delete', require('../controller/admin/admin_delete')); //实现用户删除功能
 

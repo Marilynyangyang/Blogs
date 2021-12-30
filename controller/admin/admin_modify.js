@@ -23,7 +23,7 @@ module.exports = function _callee(req, res, next) {
         case 4:
           user = _context.sent;
           _context.next = 7;
-          return regeneratorRuntime.awrap(bcrypt.compare(password, user.password));
+          return regeneratorRuntime.awrap(password == user.password);
 
         case 7:
           isValue = _context.sent;

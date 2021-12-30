@@ -1,5 +1,5 @@
 //导入文章集合构造函数
-var _require = require('../../model/article'),
+var _require = require('../../model/blog'),
     Article = _require.Article; // 导入评论集合构造函数
 
 
@@ -30,7 +30,7 @@ module.exports = function _callee(req, res) {
         case 6:
           comments = _context.sent;
           //res.send('欢迎来到博客文章详情页面')
-          res.render('home/article.art', {
+          res.render('blog_home/article.art', {
             article: article,
             comments: comments
           });

@@ -22,7 +22,7 @@ module.exports = function _callee(req, res) {
 
         case 3:
           // 将页面重定向回文章详情页面
-          res.redirect('/home/article?id=' + aid);
+          res.redirect('/blog_home/article?id=' + aid);
 
         case 4:
         case "end":

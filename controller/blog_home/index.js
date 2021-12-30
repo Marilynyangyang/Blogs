@@ -1,4 +1,4 @@
-var _require = require('../../model/article'),
+var _require = require('../../model/blog'),
     Article = _require.Article; //导入分页模块
 
 var pagination = require('mongoose-sex-page');
@@ -19,7 +19,7 @@ module.exports = function _callee(req, res) {
           result = _context.sent;
           // res.send('欢迎来到博客首页')
           // 渲染模板并传递数据
-          res.render('home/default.art', {
+          res.render('blog_home/default.art', {
             result: result
           });
 

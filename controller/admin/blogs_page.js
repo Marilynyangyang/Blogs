@@ -1,5 +1,5 @@
 //将文章集合的构造函数导入到当前文件中
-var _require = require('../../model/article'),
+var _require = require('../../model/blog'),
     Article = _require.Article; // 导入mongoose-sex-page模块
 
 

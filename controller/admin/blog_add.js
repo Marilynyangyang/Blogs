@@ -3,7 +3,7 @@ var formidable = require('formidable');
 
 var path = require('path');
 
-var _require = require('../../model/article'),
+var _require = require('../../model/blog'),
     Article = _require.Article;
 
 module.exports = function (req, res) {

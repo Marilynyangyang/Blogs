@@ -11,7 +11,7 @@ var config = require('config');
 require('babel-polyfill')
 
 //连接数据库
-require('./model/connection');
+require('./model/db_connect');
 
 //处理post请求参数
 app.use(bodyParser.urlencoded({
@@ -33,10 +33,10 @@ app.engine('art', require('express-art-template'));
 //导入日期
 template.defaults.imports.dateFormat = dateFormat;
 //导入home,admin模块
-var home = require('./route/home');
-var admin = require('./route/admin');
+var home = require('./routes/blog_home');
+var admin = require('./routes/admin');
 //拦截请求判断用户登录状态
-app.use('/admin', require('./middleware/loginGuard'));
+app.use('/admin', require('./middleware/login_verify'));
 
 //匹配路由的请求路径
 app.use('/', home);

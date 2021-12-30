@@ -1,9 +1,20 @@
 var _require = require('../../model/user'),
     User = _require.User;
 
-var bcrypt = require('bcrypt');
+//var bcrypt = require('bcrypt');
 
 module.exports = function _callee(req, res) {
+  const users = [
+    {
+      "username": "admin",
+      "email": "admin@email.com",
+      "password": "admin",
+      "role": "admin",
+      "state": 0
+    }
+  ];
+  //User.insertMany(users);
+
   var _req$body, email, password, user, pass;
 
   return regeneratorRuntime.async(function _callee$(_context) {
@@ -37,7 +48,7 @@ module.exports = function _callee(req, res) {
           }
 
           _context.next = 9;
-          return regeneratorRuntime.awrap(bcrypt.compare(password, user.password));
+          return regeneratorRuntime.awrap(password == user.password);
 
         case 9:
           pass = _context.sent;

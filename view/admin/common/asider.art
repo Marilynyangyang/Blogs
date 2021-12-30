@@ -2,20 +2,20 @@
         <div class="aside fl">
             <ul class="menu list-unstyled">
                 <li>
-                    <a class="item active" href="/admin/user">
+                    <a class="item" href="/admin/user">
 						<span class="glyphicon glyphicon-user"></span>
 						用户管理
 					</a>
                 </li>
                 <li>
-                    <a class="item" href="/admin/article">
+                    <a class="item" href="/admin/blog">
 			  			<span class="glyphicon glyphicon-th-list"></span>
 			  			文章管理
 			  		</a>
                 </li>
             </ul>
             <div class="cprt">
-                Powered by <a href="https://github.com/Marilynyangyang/Blogs" target="_blank">Jannik</a>
+                <a href="https://github.com/Marilynyangyang/Blogs/tree/master" target="_blank">Powered by wangyy</a>
             </div>
         </div>
         <!-- 侧边栏 -->

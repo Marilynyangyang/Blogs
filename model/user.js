@@ -1,7 +1,5 @@
-//导入mongoose模块以及joi验证模块
 const mongoose = require('mongoose');
-const Joi = require('joi');
-//创建集合规则
+const Joi = require('joi'); //导入joi验证模块
 const userSchema = new mongoose.Schema({
     username: {
         type: String,
@@ -28,10 +26,7 @@ const userSchema = new mongoose.Schema({
         default: 0
     }
 });
-
-//创建集合
 const User = mongoose.model('User', userSchema);
-
 async function creatUser() {
     const user = await User.create({
         username: 'wyy',
@@ -39,10 +34,8 @@ async function creatUser() {
         password: 'admin',
         role: 'admin',
         state: 0
-
     });
 }
-
 //验证用户信息
 const validateUser = user => {
     const schema = {
@@ -52,10 +45,8 @@ const validateUser = user => {
         role: Joi.string().valid('normal', 'admin').required().error(new Error('角色值非法')),
         state: Joi.number().valid(0, 1).required().error(new Error('状态值非法'))
     };
-    //实现验证
     return Joi.validate(user, schema);
 }
-
 module.exports = {
     User,
     validateUser

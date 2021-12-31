@@ -15,7 +15,7 @@ module.exports = function _callee(req, res) {
             time: new Date()
           }));
         case 3:
-          res.redirect('/blog_home/article?id=' + aid); //将页面重定向回文章详情页面
+          res.redirect('/home/article?id=' + aid); //将页面重定向回文章详情页面
         case 4:
         case "end":
           return _context.stop();

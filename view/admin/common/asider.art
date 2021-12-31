@@ -8,14 +8,14 @@
 					</a>
                 </li>
                 <li>
-                    <a class="item" href="/admin/blog">
-			  			<span class="glyphicon glyphicon-th-list"></span>
-			  			文章管理
+                    <a class="item" href="/admin/article">
+			  			<span class="glyphicon glyphicon-th-large"></span>
+			  			博客管理
 			  		</a>
                 </li>
             </ul>
             <div class="cprt">
-                <a href="https://github.com/Marilynyangyang/Blogs/tree/master" target="_blank">Powered by wangyy</a>
+                <a href="https://github.com/Marilynyangyang/Blogs/tree/master" target="_blank">关于wangyy</a>
             </div>
         </div>
         <!-- 侧边栏 -->
